@@ -105,4 +105,37 @@ console.log(man1);
 
   const entryKeyValue = Object.entries(employee)
   console.log(entryKeyValue);
+
+  // to change/edit any property from object
+  employee.salary = 9000;
+  console.log(employee.salary);
+  console.log(employee);
+
+  // to delete any property from object
+  delete student.id
+  console.log(student);
+  console.log(student.id);  // undefined
+
+  // to fix object
+  Object.freeze(employee)  // NOT to delete or modify
+  Object.seal(employee)    // NOT to delete but allow to modify
+}
+
+{
+  // LOOP in an Object for-in loop
+
+  const employee = {
+    id: 103,
+    name: "Masud",
+    salary: 5000,
+    role: 'supervisor',
+    isReach: false,
+  }
+
+  for (const properties in employee) {
+    
+    console.log(properties);
+    
+  }
+
 }
